@@ -1,1 +1,0 @@
-# rakathon-idea-submission
