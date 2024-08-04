@@ -1,0 +1,9 @@
+.sl-markdown-content
+  :not(a, strong, em, del, span, input, code, ul, li)
+  + :not(a, strong, em, del, span, input, code, ul, li :where(.not-content *)) {
+  margin-top: 1.5rem;
+}
+
+.sl-markdown-content ul:not(a, strong, em, del, span, input, code) {
+  margin-top: 0.4rem;
+}
