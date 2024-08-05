@@ -31,6 +31,8 @@ Our LLM will be fine-tuned to split its output into two distinct sections. The f
 
 The second section of the LLM&#x27;s output will focus on user interaction, maintaining a natural and conversational tone. This allows users to interact with our system as they would with a human assistant. By understanding and responding to full sentences and complex questions, our LLM will enhance user experience and engagement. For example, in response to the same query about a smartphone, the LLM might reply, &quot;Sure, I can help you find a smartphone under $500 with next-day delivery. Here are some options...&quot;.  Additionally, the LLM might ask for more parameters such as preferred brands, RAM, or storage requirements to refine the search further and provide more tailored recommendations.
 
+<img src="/UI.png" />
+
 ### Fine-Tuning Techniques
 
 To achieve this dual functionality, we will employ advanced fine-tuning techniques. One approach is to use Low-Rank Adaptation (LoRA), which allows us to create two different versions of the same LLM: one optimized for keyword and parameter extraction and the other for user interaction. LoRA is particularly useful for fine-tuning large models with minimal computational resources, enabling us to efficiently adapt the LLM for our specific needs without extensive retraining.
@@ -40,6 +42,8 @@ By integrating these fine-tuned LLMs into our system, we aim to provide a seamle
 ### Database Search Using Extracted Keywords and Parameters
 
 Once the LLM has extracted the relevant keywords and parameters from the user&#x27;s input, these data points will be used to perform a database search. Our system will query an extensive product database, filtering results based on the extracted parameters such as brand, price range, delivery time, RAM, and storage requirements. This process ensures that the search results are highly relevant to the user&#x27;s needs, providing a more efficient and accurate retrieval of information. The structured data from the LLM enables our system to quickly identify the most suitable products, significantly improving the speed and precision of the search process.
+
+<img src="/Features.png" />
 
 ### Feeding Results Back to the LLM
 
