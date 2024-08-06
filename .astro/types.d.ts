@@ -136,9 +136,51 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"docs": {
+"Approach/User Interaction/ui.mdx": {
+	id: "Approach/User Interaction/ui.mdx";
+  slug: "approach/user-interaction/ui";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"Approach/index.mdx": {
+	id: "Approach/index.mdx";
+  slug: "approach";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"Approach/keyword.mdx": {
+	id: "Approach/keyword.mdx";
+  slug: "approach/keyword";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"Implementation.mdx": {
+	id: "Implementation.mdx";
+  slug: "implementation";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"Objective.mdx": {
+	id: "Objective.mdx";
+  slug: "objective";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
 "index.mdx": {
 	id: "index.mdx";
   slug: "index";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"objective/index.mdx": {
+	id: "objective/index.mdx";
+  slug: "objective";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">

@@ -9,7 +9,7 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   integrations: [
     starlight({
-      title: "My Dukandaar",
+      title: "My Dukandar",
       customCss: [
         "./src/tailwind.css",
         "./src/styles/katex.css",

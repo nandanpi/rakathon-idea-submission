@@ -1,69 +1,9 @@
 ---
-title: My Dukandaar
-description: EWe plan to develop a search system that leverages fine-tuned large language models (LLMs) for real-time keyword extraction and natural language interaction, enhancing the efficiency and accuracy of search results while providing a conversational and personalized user experience. This dual approach will bridge the gap between natural language communication and traditional keyword-based search queries, optimizing both user satisfaction and search performance. Check out our demo at tasc-rakathon.vercel.app.
+title: My Dukandar
 template: doc
 tableOfContents: false
-hero:
-  title: My Dukandaar
+sidebar:
+  order: 1
 ---
 
-# Objective
-
-We plan to develop a search system that leverages fine-tuned large language models (LLMs) for real-time keyword extraction and natural language interaction, enhancing the efficiency and accuracy of search results while providing a conversational and personalized user experience. This dual approach will bridge the gap between natural language communication and traditional keyword-based search queries, optimizing both user satisfaction and search performance. Check out our demo at tasc-rakathon.vercel.app.
-
-# Implementation
-
-Checkout the demo of our idea at tasc-rakathon.vercel.app.
-
-When people use search engines, their language tends to differ significantly from natural language communication. Instead of forming complete sentences or questions as they would in a conversation, users often input a series of relevant terms or short phrases to optimize search results. For instance, someone looking for information on baking a cake might type &quot;easy cake recipe&quot; rather than asking, &quot;How do I bake a cake easily?&quot; This behavior stems from the need for efficiency and the way search engines process queries, where specific keywords yield better results. Over time, this search-specific language has become second nature to users, who intuitively know how to phrase their queries to quickly find the information they seek.
-
-Large language models (LLMs) can significantly transform the search landscape by bridging the gap between natural language and search engine queries. LLMs can interpret and respond to full sentences and complex questions as effectively as keyword-based queries. This allows users to interact with search engines in a more conversational manner, similar to how they would communicate with another person. As these models become more integrated into search technologies, they could shift user behavior back towards natural language communication, reducing the need for keyword-based searching.
-
-## Our Approach
-
-To achieve real-time keyword extraction using natural language, we plan to fine-tune our large language model (LLM) to handle dual tasks: extracting keywords and parameters for internal use and interacting seamlessly with users. This approach will involve sophisticated fine-tuning techniques to ensure our LLM can effectively parse natural language inputs and provide relevant, structured data for our systems.
-
-### Keyword Extraction and Parameter Handling
-
-Our LLM will be fine-tuned to split its output into two distinct sections. The first section will be dedicated to extracting keywords and parameters such as brand, price range, and delivery time. For example, if a user asks, &quot;Can you find a smartphone under Rs. 30,000 with next-day delivery?&quot; our model will identify &quot;smartphone&quot; as the keyword and &quot;under Rs. 30,000&quot; and &quot;next-day delivery&quot; as key parameters. This extracted data will be formatted in a structured way to be processed by our internal systems, enabling them to perform precise and efficient searches.
-
-### User Interaction
-
-The second section of the LLM&#x27;s output will focus on user interaction, maintaining a natural and conversational tone. This allows users to interact with our system as they would with a human assistant. By understanding and responding to full sentences and complex questions, our LLM will enhance user experience and engagement. For example, in response to the same query about a smartphone, the LLM might reply, &quot;Sure, I can help you find a smartphone under $500 with next-day delivery. Here are some options...&quot;.  Additionally, the LLM might ask for more parameters such as preferred brands, RAM, or storage requirements to refine the search further and provide more tailored recommendations.
-
-<img src="/UI.png" />
-
-### Fine-Tuning Techniques
-
-To achieve this dual functionality, we will employ advanced fine-tuning techniques. One approach is to use Low-Rank Adaptation (LoRA), which allows us to create two different versions of the same LLM: one optimized for keyword and parameter extraction and the other for user interaction. LoRA is particularly useful for fine-tuning large models with minimal computational resources, enabling us to efficiently adapt the LLM for our specific needs without extensive retraining.
-
-By integrating these fine-tuned LLMs into our system, we aim to provide a seamless, intuitive search experience that leverages natural language while ensuring precise and efficient data extraction. This dual approach will not only enhance the accuracy of our search results but also improve overall user satisfaction.
-
-### Database Search Using Extracted Keywords and Parameters
-
-Once the LLM has extracted the relevant keywords and parameters from the user&#x27;s input, these data points will be used to perform a database search. Our system will query an extensive product database, filtering results based on the extracted parameters such as brand, price range, delivery time, RAM, and storage requirements. This process ensures that the search results are highly relevant to the user&#x27;s needs, providing a more efficient and accurate retrieval of information. The structured data from the LLM enables our system to quickly identify the most suitable products, significantly improving the speed and precision of the search process.
-
-<img src="/Features.png" />
-
-### Feeding Results Back to the LLM
-
-After retrieving the search results from the database, the data will be fed back into the LLM. The LLM will then process this information to generate an interactive response for the user. This response will not only present the most relevant options but also allow the LLM to continue the conversation with the user. For instance, if the initial results do not fully meet the user&#x27;s criteria, the LLM can ask follow-up questions or refine the search parameters further. This iterative process ensures that the user receives the most accurate and satisfying results, making the search experience more dynamic and responsive.
-
-### Interactive Features
-
-To enhance the user experience, our system will include features such as product comparison and summary of product reviews. Product comparison feature will allow users to compare different products side by side, presenting detailed information in a tabular format. Users will be able to see specifications such as price, brand, RAM, storage, delivery options, and more, all in one place. The LLM will guide users through this comparison, highlighting key differences and helping them make informed decisions.
-
-### User profiles and personalization
-
-Our system will also support the creation of user profiles. By storing user preferences, search history, and frequently used parameters, we can offer a highly personalized search experience. When a user interacts with the system, the LLM will leverage this stored information while also updating it and adding new information. For example, if a user frequently searches for electronics within a specific price range, the LLM will prioritize these preferences in future searches. Additionally, the system can suggest new products based on past behavior and preferences, making the search process more efficient and user-friendly.
-
-# Applications
-
-1. Prompt-Based Shopping: Use prompts instead of keywords for shopping.
-2. Mood-Based Shopping: Analyze user mood from text and suggest products that align with their current emotional state.
-3. Contextual Recommendations: Suggest relevant items along with products, such as chess tutorials and YouTube videos when purchasing a chessboard.
-4. Real-time Fashion Trend Shopping: Enable users to shop for fashion items based on current trends in real time.
-5. Product Summarization Based on Reviews: Allow users to inquire about a specific product and receive a summary that includes reviews, comments, and ratings.
-6. Post-Purchase Support: Offer post-purchase support, including order-specific information and product tracking.
-7. Predictive Personalization: Use personalized data to predict customer behavior and adjust the LLM&#x27;s responses and recommendations accordingly.
-8. User Details for Auto-Fill: Learn user details such as fit size to auto-fill information for a more efficient shopping experience.
+Helloo
