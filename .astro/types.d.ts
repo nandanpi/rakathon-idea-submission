@@ -141,91 +141,91 @@ declare module 'astro:content' {
   slug: "application";
   body: string;
   collection: "docs";
-  data: any
+  data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
 "Approach/User Interaction/ui.mdx": {
 	id: "Approach/User Interaction/ui.mdx";
   slug: "approach/user-interaction/ui";
   body: string;
   collection: "docs";
-  data: any
+  data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
 "Approach/dbSearch.mdx": {
 	id: "Approach/dbSearch.mdx";
   slug: "approach/dbsearch";
   body: string;
   collection: "docs";
-  data: any
+  data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
 "Approach/feeding.mdx": {
 	id: "Approach/feeding.mdx";
   slug: "approach/feeding";
   body: string;
   collection: "docs";
-  data: any
+  data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
 "Approach/finetuning.mdx": {
 	id: "Approach/finetuning.mdx";
   slug: "approach/finetuning";
   body: string;
   collection: "docs";
-  data: any
+  data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
 "Approach/index.mdx": {
 	id: "Approach/index.mdx";
   slug: "approach";
   body: string;
   collection: "docs";
-  data: any
+  data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
 "Approach/interactive.mdx": {
 	id: "Approach/interactive.mdx";
   slug: "approach/interactive";
   body: string;
   collection: "docs";
-  data: any
+  data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
 "Approach/keyword.mdx": {
 	id: "Approach/keyword.mdx";
   slug: "approach/keyword";
   body: string;
   collection: "docs";
-  data: any
+  data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
 "Approach/profiles.mdx": {
 	id: "Approach/profiles.mdx";
   slug: "approach/profiles";
   body: string;
   collection: "docs";
-  data: any
+  data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
 "Implementation.mdx": {
 	id: "Implementation.mdx";
   slug: "implementation";
   body: string;
   collection: "docs";
-  data: any
+  data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
 "Objective.mdx": {
 	id: "Objective.mdx";
   slug: "objective";
   body: string;
   collection: "docs";
-  data: any
+  data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
 "Team.mdx": {
 	id: "Team.mdx";
   slug: "team";
   body: string;
   collection: "docs";
-  data: any
+  data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
 "index.mdx": {
 	id: "index.mdx";
   slug: "index";
   body: string;
   collection: "docs";
-  data: any
+  data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
 };
 
@@ -235,12 +235,12 @@ declare module 'astro:content' {
 		"i18n": Record<string, {
   id: string;
   collection: "i18n";
-  data: any;
+  data: InferEntrySchema<"i18n">;
 }>;
 
 	};
 
 	type AnyEntryMap = ContentEntryMap & DataEntryMap;
 
-	export type ContentConfig = never;
+	export type ContentConfig = typeof import("../src/content/config.js");
 }
